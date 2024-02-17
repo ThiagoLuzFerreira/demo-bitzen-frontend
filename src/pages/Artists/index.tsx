@@ -61,7 +61,7 @@ const Artists: React.FC = () => {
       </header>
       <nav className="links">
         <Link to="/">Home</Link>
-        <Link to="/albuns">Albuns</Link>
+        <Link to="/albums">Albuns</Link>
         <Link to="/musics">Musics</Link>
       </nav>
 
