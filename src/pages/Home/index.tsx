@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./styles.css"
+import "./styles.css";
 
 import bitzenLogo from '../../assets/bitzen.jpg';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className='home-container'>
       <section className='greeting'>
@@ -14,12 +14,11 @@ const Home = () => {
 
       <div className="links">
         <Link to="/artists">Artists</Link>
-        <Link to="/albuns">Albuns</Link>
+        <Link to="/albums">Albums</Link>
         <Link to="/musics">Musics</Link>
       </div>
-        
     </div>
-  )
+  );
 }
 
 export default Home;
