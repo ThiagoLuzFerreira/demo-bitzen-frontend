@@ -27,7 +27,7 @@ const Artists: React.FC = () => {
   async function deleteArtist(id: number) {
     try {
       await api.delete(`/artists/${id}`);
-      setArtists(artists.filter(artist => artist.id !== id));
+      setArtists(artists.filter(artist => artist.id !== id))
     } catch (error) {
       console.error('Error deleting artist:', error);
     }
