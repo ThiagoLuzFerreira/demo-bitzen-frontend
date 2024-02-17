@@ -56,9 +56,14 @@ const Artists: React.FC = () => {
   return (
     <div className='artist-container'>
       <header>
-        <span>Welcome to the Artists section</span>
+        <h1>Welcome to the Artists section</h1>
         <Link className='button' to="/artists/new/0">Add new artist</Link>
       </header>
+      <nav className="links">
+        <Link to="/">Home</Link>
+        <Link to="/albuns">Albuns</Link>
+        <Link to="/musics">Musics</Link>
+      </nav>
 
       <h1>Artists List</h1>
       <ul>

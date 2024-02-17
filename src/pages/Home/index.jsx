@@ -14,8 +14,8 @@ const Home = () => {
 
       <div className="links">
         <Link to="/artists">Artists</Link>
-        <Link to="/services">Albuns</Link>
-        <Link to="/contact">Musics</Link>
+        <Link to="/albuns">Albuns</Link>
+        <Link to="/musics">Musics</Link>
       </div>
         
     </div>
