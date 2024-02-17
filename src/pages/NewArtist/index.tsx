@@ -39,7 +39,7 @@ const NewArtist: React.FC = () => {
   }, [artistId, history]);
   
 
-  async function createOrSaveBook(e: React.FormEvent) {
+  async function createOrSaveArtist(e: React.FormEvent) {
     e.preventDefault();
 
     const data = {
@@ -54,7 +54,7 @@ const NewArtist: React.FC = () => {
       } else {
         if (id) {
           data.id = id;
-          await api.put(`artists/${id}`, data);
+          await api.put(`artists`, data);
         }
       }
 
@@ -73,7 +73,7 @@ const NewArtist: React.FC = () => {
             <FiArrowLeft size={16} color='#251FC5' /> Back
           </Link>
         </section>
-        <form onSubmit={createOrSaveBook}>
+        <form onSubmit={createOrSaveArtist}>
           <input
             placeholder='Name'
             value={name}
